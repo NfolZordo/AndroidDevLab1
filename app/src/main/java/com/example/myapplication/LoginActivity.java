@@ -12,14 +12,16 @@ import android.widget.TextView;
 import java.io.Serializable;
 
 public class LoginActivity extends AppCompatActivity {
-    private Student student = new Student("Задорожний", "Олександер", "Васильович",
+    private Student student = new Student("Задорожний", "Олександир", "Васильович",
             "ПЗ-2004", "Факультет інформаційних технологій і систем",
             "121 - Інженерія програмного забезпечення", "qqqq", "1111", 3);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     public void sendMessage(View view) {
         EditText editPassword = (EditText) findViewById(R.id.editTextTextPassword);
         String receivedPassword = editPassword.getText().toString();
